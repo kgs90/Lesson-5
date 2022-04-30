@@ -28,7 +28,8 @@ Console.WriteLine(Math.Round(findMaxMin(), 2));
 void genArray(int N, int minimum, int maximum) 
 { 
     Console.Write("[" + count + "] = " + "");
-    for (i = 1; i <= N; i++) {
+    for (i = 1; i <= N; i++) 
+    {
         array[i-1] = rnd.NextDouble() * rnd.Next(minimum, maximum) * i;
         if (i != N) Console.Write(Math.Round(array[i-1], 2) + "; ");
         else  Console.Write(Math.Round(array[i-1], 2));
